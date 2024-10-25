@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="styles2GQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="banner">
+        <video src="videos/ETN_Banner.mp4" class="Hvideo" autoplay loop muted></video>
+    </div>
+
+    <header class="header">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..">
+            <button type="button" onclick="searchPage()">
+                <img src="images/searchIcon.png" alt="Search Icon">
+            </button>
+            <script>
+                // List of pages and corresponding URLs
+                const pages = {
+                    "Child minding": "childminding.html",
+                    "Child": "childminding.html",
+                    "child": "childminding.html",
+                    "Child Minding": "childminding.html",
+                    "child minding": "childminding.html",
+                    "First Aid": "firstaid.html",
+                    "first aid": "firstaid.html",
+                    "first": "firstaid.html",
+                    "aid": "firstaid.html",
+                    "Landscaping": "landscaping.html",
+                    "Land": "landscaping.html",
+                    "landscaping": "landscaping.html",
+                    "land": "landscaping.html",
+                    "Cooking": "cooking.html",
+                    "Cook": "cooking.html",
+                    "cooking": "cooking.html",
+                    "cook": "cooking.html",
+                    "life skills": "lifeskills.html",
+                    "Life Skills": "lifeskills.html",
+                    "life": "lifeskills.html",
+                    "skills": "lifeskills.html",
+                    "Garden Maintenance": "gardenmaintenance.html",
+                    "garden maintenance": "gardenmaintenance.html",
+                    "Garden": "gardenmaintenance.html",
+                    "Maintenance": "gardenmaintenance.html",
+                    "Sewing": "sewing.html",
+                    "Sew": "sewing.html",
+                    "sewing": "sewing.html",
+                    "sew": "sewing.html",
+                    "Fees": "getQuote.html",
+                    "fees": "getQuote.html",
+                    "Quote": "getQuote.html",
+                    "quote": "getQuote.html",
+                    "prices": "getQuote.html",
+                    "Prices": "getQuote.html",
+                    "Discount": "courses.html",
+                    "courses": "courses.html",
+                    "Contact": "contactUs.html",
+                    "Social Media": "contactUs.html",
+                };
+                // Function to search and navigate to the page
+                function searchPage() {
+                    const query = document.getElementById("searchInput").value.toLowerCase();
+                    if (pages[query]) {
+                        // Redirect to the corresponding page
+                        window.location.href = pages[query];
+                    } else {
+                        alert("Search Unavailale. Please Try searching again. - Thanks, ETN Team");
+                    }
+                }
+            </script>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="moreAll.html">More</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="getQuote.html"><button class="quote-btn">Get Quote</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="quote-container">
+            <!-- Left Section: Image -->
+            <div class="quote-image">
+                <img src="images/quote_img.png" alt="Quote Image">
+            </div>
+            <!-- Right Section: Form -->
+            <div class="quote-form">
+                <!-- Course Categories -->
+                <div class="course-categories">
+                    <h2>6-Week Courses <span>|</span> 6-Month Courses</h2>
+                </div>
+                <!-- Courses List -->
+                <div class="courses-list">
+                    <ul class="week-courses">
+                        <li><input type="checkbox" class="checkbox" value="1500"> R1 500 Sewing Course</li>
+                        <li><input type="checkbox" class="checkbox" value="1500"> R1 500 First Aid Course</li>
+                        <li><input type="checkbox" class="checkbox" value="1500"> R1 500 Life Skills Course</li>
+                        <li><input type="checkbox" class="checkbox" value="1500"> R1 500 Landscaping Course</li>
+                    </ul>
+                    <ul class="month-courses">
+                        <li><input type="checkbox" class="checkbox" value="750"> R 750 Cooking Course</li>
+                        <li><input type="checkbox" class="checkbox" value="750"> R 750 Child-minding Course</li>
+                        <li><input type="checkbox" class="checkbox" value="750"> R 750 Garden Maintenance Course</li>
+                    </ul>
+                </div>
+                <!-- Action Row: Calculate Button and Totals -->
+                <div class="action-row">
+                    <!-- Calculate Button -->
+                    <button class="calculate-btn" onclick="calculateTotal()">Calculate</button>
+                    <!-- Discount and Total Section -->
+                    <div class="totals">
+                        <p>DISCOUNT: <strong><span id="discount">0%</span></strong></p>
+                        <p>TOTAL: <strong>R<span id="total">0</span></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div><img src="images/touchBG.png" class="background">
+            <div class="box">
+                <div class="group">
+                    <div class="input-field">
+                        <label class="label" for="input-1">Name:</label>
+                        <input class="value-wrapper" placeholder="First Name" type="text" id="input-1" />
+                    </div>
+                    <div class="div">
+                        <div class="label">Message:</div>
+                        <input class="value-wrapper" placeholder="Message" type="text" id="input-message" />
+                    </div>
+                    <div class="input-field-2">
+                        <div class="label">Email:</div>
+                        <input class="value-wrapper" placeholder="@" type="text" id="input-email" />
+                    </div>
+                    <div class="input-field-3">
+                        <div class="label">Phone Number:</div>
+                        <input class="value-wrapper" placeholder="+27" type="number" id="input-phone" />
+                    </div>
+                    <div class="input-field-4">
+                        <label class="label" for="input-2">Surname:</label>
+                        <input class="value-wrapper" placeholder="Last Name" type="text" id="input-2" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Submit button -->
+    <div class="submit-button">
+        <button type="button" class="submit" onclick="clearInputs()">Submit</button>
+    </div>
+    <script>
+        function clearInputs() {
+            // Select all input fields with the class 'value-wrapper' and clear their values
+            const inputs = document.querySelectorAll('.value-wrapper');
+            inputs.forEach(input => input.value = ''); // Set the value of each input to an empty string
+        }
+    </script>
+    <button class="back-button" onclick="goBack()">Back</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        // Function to calculate total and discount
+        function calculateTotal() {
+            const checkboxes = document.querySelectorAll('.checkbox:checked');
+            let total = 0;
+            // Calculate total based on selected courses
+            checkboxes.forEach(checkbox => {
+                total += parseFloat(checkbox.value);
+            });
+            // Determine discount
+            let discount = 0;
+            if (checkboxes.length === 2) {
+                discount = 5;
+            } else if (checkboxes.length === 3) {
+                discount = 10;
+            } else if (checkboxes.length >= 4) {
+                discount = 15;
+            }
+            // Calculate discount amount and final total
+            const discountAmount = (total * discount) / 100;
+            const discountedTotal = total - discountAmount;
+            // Update UI with discount and total
+            document.getElementById('discount').innerText = discount + '%';
+            document.getElementById('total').innerText = discountedTotal.toFixed(2);
+        }
+    </script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>CONTACT US</h3>
+            <br>
+            <p>Phone: +27 11 618 0547</p>
+            <p>Email: empoweringthenation@gmail.com</p>
+            <p>Website: https//:empoweringthenation.ac.za</p>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US</h3>
+            <br>
+            <a href="https://www.tiktok.com/@etn_skillsdev"><i class="fab fa-tiktok"></i> TikTok</a><br>
+            <a href="https://x.com/etn_skillsdev"><i class="fab fa-twitter"></i>Twitter</a><br>
+            <a href="https://www.facebook.com/people/Empowering-The-Nation/61567185643658/"><i
+                    class="fab fa-facebook-f"></i> Facebook</a><br>
+            <a href="https://www.instagram.com/etn_skillsdev/"><i class="fab fa-instagram"></i> Instagram</a><br>
+        </div>
+        <div class="footer-section">
+            <h3>WHERE TO FIND US</h3>
+            <br>
+            <p>Kerk Street, Troye St, Johannesburg 2000</p>
+            <p>WaterStone Drive, Benmore Rd, Sandton 2196</p>
+            <p>255 Pretoruis St, Pretoria Centraal, Pretoria 0001</p>
+        </div>
+    </div>
+    <div class="rights">
+        <p class="pRights">&copy; 2018 Empowering The Nation. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

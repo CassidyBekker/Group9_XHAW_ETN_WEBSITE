@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="styles3CO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/XHAW ETN LOGO - Cropped.png" alt="Logo">
+            <h1>Empowering The Nation</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search..">
+                    <button type="button" onclick="searchPage()">
+                        <img src="images/searchIcon.png" alt="Search Icon">
+                    </button>
+                    <script>
+                        // List of pages and corresponding URLs
+                        const pages = {
+                            "Child minding": "childminding.html",
+                            "Child": "childminding.html",
+                            "child": "childminding.html",
+                            "Child Minding": "childminding.html",
+                            "child minding": "childminding.html",
+                            "First Aid": "firstaid.html",
+                            "first aid": "firstaid.html",
+                            "first": "firstaid.html",
+                            "aid": "firstaid.html",
+                            "Landscaping": "landscaping.html",
+                            "Land": "landscaping.html",
+                            "landscaping": "landscaping.html",
+                            "land": "landscaping.html",
+                            "Cooking": "cooking.html",
+                            "Cook": "cooking.html",
+                            "cooking": "cooking.html",
+                            "cook": "cooking.html",
+                            "life skills": "lifeskills.html",
+                            "Life Skills": "lifeskills.html",
+                            "life": "lifeskills.html",
+                            "skills": "lifeskills.html",
+                            "Garden Maintenance": "gardenmaintenance.html",
+                            "garden maintenance": "gardenmaintenance.html",
+                            "Garden": "gardenmaintenance.html",
+                            "Maintenance": "gardenmaintenance.html",
+                            "Sewing": "sewing.html",
+                            "Sew": "sewing.html",
+                            "sewing": "sewing.html",
+                            "sew": "sewing.html",
+                            "Fees": "getQuote.html",
+                            "fees": "getQuote.html",
+                            "Quote": "getQuote.html",
+                            "quote": "getQuote.html",
+                            "prices": "getQuote.html",
+                            "Prices": "getQuote.html",
+                            "Discount": "courses.html",
+                            "courses": "courses.html",
+                            "Contact": "contactUs.html",
+                            "Social Media": "contactUs.html",
+                        };
+                        // Function to search and navigate to the page
+                        function searchPage() {
+                            const query = document.getElementById("searchInput").value.toLowerCase();
+                            if (pages[query]) {
+                                // Redirect to the corresponding page
+                                window.location.href = pages[query];
+                            } else {
+                                alert("Search Unavailale. Please Try searching again. - Thanks, ETN Team");
+                            }
+                        }
+                    </script>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="moreAll.html">More</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><button class="quote-btn"><a href="getQuote.html"> Get Quote </a></button> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="pricing-container">
+            <button class="back-button" onclick="goBack()">Back</button>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+            <div class="header1">
+                <h1 class="heading">OFFERED <br> COURSES</h1>
+            </div>
+            <div class="Discounts">
+                <img src="images/discounthead.png" class="picHeaderD">
+                <p class="discount-p"> We’re excited to offer a special discount to help you maximize your learning
+                    while saving! The
+                    more courses you enrol in, the bigger the discount:
+                </p>
+                <ul class="features">
+                    <li> Sign up for <span class="bold">two courses </span>and enjoy a <span class="bold">5%
+                            discount.</span></li>
+                    <li> Enrol in <span class="bold">three courses</span> and save with a <span class="bold">discount of
+                            10%.</span></li>
+                    <li>Register for <span class="bold">four or more courses,</span> and you'll receive a generous <span
+                            class="bold">15% discount.</span></li>
+                    </br>
+                    <p class="discount-p">It’s our way of encouraging you to take full advantage of the opportunities to
+                        expand yours kills and knowledge, while making it more affordable to invest in your future.
+                        Whether you’re
+                        looking to boost your career or learn something new, you can now do so with added savings</p>
+                </ul>
+            </div>
+            <div class="six-week">
+                <img src="images/6weekhead.png" class="picHeader">
+                <p class="week-p">Taking our 6-week course is the perfect way to capitalise an opportunity where you can
+                    quickly, yet
+                    effectively gain practical skills and knowledge that will benefit you both personally and
+                    professionally.
+                    </br>The short duration of the course allows you to stay focused and engaged, while still
+                    offering the flexibility to manage your other responsibilities.
+                    </br> By the end of the program, you will
+                    have hands-on experience and insights that can be immediately applied to your career or personal
+                    projects. We are confident that this course will provide you with valuable tools for growth and
+                    success.
+                <p>--------------------------------------------------------</p>
+                <img src="images/weekCourses.png" alt="gardener" class="img-week">
+                <button class="six-week-btn"><a href="MoreC2.html">LEARN MORE</a></button> </p>
+            </div>
+            <div class="six-month">
+                <img src="images/6monthhead.png" class="picHeader">
+                <p class="month-p">Our 6-month course is designed to offer you a more thorough and immersive learning
+                    experience,
+                    providing the time needed to truly master new skills and concepts.
+                    Throughout this course, you'll engage in hands-on learning that allows you to apply what you’ve
+                    learned in real-world contexts,
+                    ensuring a deeper and more meaningful understanding. The longer duration gives you the space to
+                    fully develop your expertise and grow both professionally and personally.
+                    </br> By the end of the course,
+                    you will have gained not just knowledge, but also the confidence and practical experience to make a
+                    lasting impact in your career or future endeavours.
+                <p>--------------------------------------------------------</p>
+                <img src="images/monthCourses.png" alt="sew" class="img-month">
+                <button class="six-month-btn"><a href="MoreC.html"> LEARN MORE</a></button></p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>CONTACT US</h3>
+            <br>
+            <p>Phone: +27 11 618 0547</p>
+            <p>Email: empoweringthenation@gmail.com</p>
+            <p>Website: https//:empoweringthenation.ac.za</p>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US</h3>
+            <br>
+            <a href="https://www.tiktok.com/@etn_skillsdev"><i class="fab fa-tiktok"></i> TikTok</a><br>
+            <a href="https://x.com/etn_skillsdev"><i class="fab fa-twitter"></i>Twitter</a><br>
+            <a href="https://www.facebook.com/people/Empowering-The-Nation/61567185643658/"><i
+                    class="fab fa-facebook-f"></i> Facebook</a><br>
+            <a href="https://www.instagram.com/etn_skillsdev/"><i class="fab fa-instagram"></i> Instagram</a><br>
+        </div>
+        <div class="footer-section">
+            <h3>WHERE TO FIND US</h3>
+            <br>
+            <p>Kerk Street, Troye St, Johannesburg 2000</p>
+            <p>WaterStone Drive, Benmore Rd, Sandton 2196</p>
+            <p>255 Pretoruis St, Pretoria Centraal, Pretoria 0001</p>
+        </div>
+    </div>
+    <div class="rights">
+        <p class="pRights">&copy; 2018 Empowering The Nation. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

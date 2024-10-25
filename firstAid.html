@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="styles7in.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/XHAW ETN LOGO - Cropped.png" alt="Logo">
+            <h1 style="align-items: center;">Empowering The Nation</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search..">
+                    <button type="button" onclick="searchPage()">
+                        <img src="images/searchIcon.png" alt="Search Icon">
+                    </button>
+                    <script>
+                        // List of pages and corresponding URLs
+                        const pages = {
+                            "Child minding": "childminding.html",
+                            "Child": "childminding.html",
+                            "child": "childminding.html",
+                            "Child Minding": "childminding.html",
+                            "child minding": "childminding.html",
+                            "First Aid": "firstaid.html",
+                            "first aid": "firstaid.html",
+                            "first": "firstaid.html",
+                            "aid": "firstaid.html",
+                            "Landscaping": "landscaping.html",
+                            "Land": "landscaping.html",
+                            "landscaping": "landscaping.html",
+                            "land": "landscaping.html",
+                            "Cooking": "cooking.html",
+                            "Cook": "cooking.html",
+                            "cooking": "cooking.html",
+                            "cook": "cooking.html",
+                            "life skills": "lifeskills.html",
+                            "Life Skills": "lifeskills.html",
+                            "life": "lifeskills.html",
+                            "skills": "lifeskills.html",
+                            "Garden Maintenance": "gardenmaintenance.html",
+                            "garden maintenance": "gardenmaintenance.html",
+                            "Garden": "gardenmaintenance.html",
+                            "Maintenance": "gardenmaintenance.html",
+                            "Sewing": "sewing.html",
+                            "Sew": "sewing.html",
+                            "sewing": "sewing.html",
+                            "sew": "sewing.html",
+                            "Fees": "getQuote.html",
+                            "fees": "getQuote.html",
+                            "Quote": "getQuote.html",
+                            "quote": "getQuote.html",
+                            "prices": "getQuote.html",
+                            "Prices": "getQuote.html",
+                            "Discount": "courses.html",
+                            "courses": "courses.html",
+                            "Contact": "contactUs.html",
+                            "Social Media": "contactUs.html",
+                        };
+                        // Function to search and navigate to the page
+                        function searchPage() {
+                            const query = document.getElementById("searchInput").value.toLowerCase();
+                            if (pages[query]) {
+                                // Redirect to the corresponding page
+                                window.location.href = pages[query];
+                            } else {
+                                alert("Search Unavailale. Please Try searching again. - Thanks, ETN Team");
+                            }
+                        }
+                    </script>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="moreAll.html">More</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="getQuote.html"><button class="quote-btn">Get Quote</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="back-button" onclick="goBack()">Back</button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+        <div class="course-container">
+            <div class="header">
+                <h1 class="course">SIX-MONTH COURSE</h1>
+                <h1 class="courseName">FIRST AID</h1>
+            </div>
+            <div class="vl"></div>
+            <div class="description">
+                <p class="content">First Aid training equips individuals with critical skills to respond to emergencies,
+                    potentially saving lives in situations like accidents or sudden illnesses. It ensures that people
+                    are prepared to provide immediate care before professional help arrives. These skills are essential
+                    in any setting, from the home to the workplace.</p>
+            </div>
+            <div>
+                <img src="images/firstaid.png" alt="firstaid" class="course-img">
+            </div>
+            <div class="course-content-section">
+                <h2>CONTENT</h2>
+                <p class="course-fees">
+                    <strong>Fees:</strong> R1500<br>
+                    <strong>Purpose:</strong> To provide first aid awareness and basic life support
+                </p>
+                <ul class="content-list">
+                    <li>Basic wounds and bleeding care</li>
+                    <li>Fundamentals of Cardio-Pulmonary Resuscitation (CPR)</li>
+                    <li>Response to Respiratory Distress such as Choking, Drowning, Fainting, etc.</li>
+                    <li>Emergency Scene Management</li>
+                    <li>Level 1, 2, 3 Burns</li>
+                    <li>Fractures</li>
+                </ul>
+            </div>
+            <div class="vl2"></div>
+            <div class="course-opportunities-section-aid">
+                <h2>opportunities</h2>
+                <p class="opportunities-text">
+                    First Aid training equips individuals with critical skills to respond to emergencies that
+                    potentially save lives in situations like freak accidents, sudden illnesses, or accidents.<br><br>
+                    <strong>Successfully completing the course qualifies you to be a:</strong>
+                <ul class="content-list">
+                    <li>Emergency Responder</li>
+                    <li>Caregiver</li>
+                    <li>Childcare Worker</li>
+                </ul>
+                </p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="images/firstaid1.png" alt="Dr. Sipho Nkosi" class="testimonial-img">
+                    <h3>Dr. Sipho Nkosi </h3>
+                    <p>Pretoria- Qualifications: MBChB (Medicine), Certified Emergency Response Instructor. -
+                        Experience: 12 years of experience in emergency medical response and training. Dr. Nkosi
+                        specializes in workplace safety and disaster management.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/firstaid2.png" alt="Thandi Molefe" class="testimonial-img">
+                    <h3>Thandi Molefe</h3>
+                    <p>Sandton - Qualifications: BSc in Nursing, First Aid Level 3 Certification. -
+                        Experience: 8 years
+                        as a trauma nurse and 4 years as a first aid trainer. Thandi has worked in both hospital and
+                        community health settings, providing crucial life-saving skills.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/firstaid3.png" alt="Xander van Wyk" class="testimonial-img">
+                    <h3>Jonathan Reed </h3>
+                    <p>Johannesburg - Qualifications: EMT (Emergency Medical Technician), First Aid Instructor
+                        Certification. -
+                        Experience: 6 years of experience working in ambulance services and providing
+                        first aid training to corporate clients and community groups.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>CONTACT US</h3>
+            <p>Phone: +27 11 618 0547</p>
+            <p>Email: empoweringthenation@gmail.com</p>
+            <p>Website: https//:empoweringthenation.ac.za</p>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US</h3>
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a><br>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        <div class="footer-section">
+            <h3>WHERE TO FIND US</h3>
+            <p>Kerk Street, Troye St, Johannesburg 2000</p>
+            <p>WaterStone Drive, Benmore Rd, Sandton 2196</p>
+            <p>255 Pretoruis St, Pretoria Centraal, Pretoria 0001</p>
+        </div>
+    </div>
+    <div class="rights">
+        <p class="pRights">&copy; 2018 Empowering The Nation. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

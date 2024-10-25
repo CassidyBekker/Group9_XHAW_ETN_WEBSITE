@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="styles7in.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/XHAW ETN LOGO - Cropped.png" alt="Logo">
+            <h1 style="align-items: center;">Empowering The Nation</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search..">
+                    <button type="button" onclick="searchPage()">
+                        <img src="images/searchIcon.png" alt="Search Icon">
+                    </button>
+                    <script>
+                        // List of pages and corresponding URLs
+                        const pages = {
+                            "Child minding": "childminding.html",
+                            "Child": "childminding.html",
+                            "child": "childminding.html",
+                            "Child Minding": "childminding.html",
+                            "child minding": "childminding.html",
+                            "First Aid": "firstaid.html",
+                            "first aid": "firstaid.html",
+                            "first": "firstaid.html",
+                            "aid": "firstaid.html",
+                            "Landscaping": "landscaping.html",
+                            "Land": "landscaping.html",
+                            "landscaping": "landscaping.html",
+                            "land": "landscaping.html",
+                            "Cooking": "cooking.html",
+                            "Cook": "cooking.html",
+                            "cooking": "cooking.html",
+                            "cook": "cooking.html",
+                            "life skills": "lifeskills.html",
+                            "Life Skills": "lifeskills.html",
+                            "life": "lifeskills.html",
+                            "skills": "lifeskills.html",
+                            "Garden Maintenance": "gardenmaintenance.html",
+                            "garden maintenance": "gardenmaintenance.html",
+                            "Garden": "gardenmaintenance.html",
+                            "Maintenance": "gardenmaintenance.html",
+                            "Sewing": "sewing.html",
+                            "Sew": "sewing.html",
+                            "sewing": "sewing.html",
+                            "sew": "sewing.html",
+                            "Fees": "getQuote.html",
+                            "fees": "getQuote.html",
+                            "Quote": "getQuote.html",
+                            "quote": "getQuote.html",
+                            "prices": "getQuote.html",
+                            "Prices": "getQuote.html",
+                            "Discount": "courses.html",
+                            "courses": "courses.html",
+                            "Contact": "contactUs.html",
+                            "Social Media": "contactUs.html",
+                        };
+                        // Function to search and navigate to the page
+                        function searchPage() {
+                            const query = document.getElementById("searchInput").value.toLowerCase();
+                            if (pages[query]) {
+                                // Redirect to the corresponding page
+                                window.location.href = pages[query];
+                            } else {
+                                alert("Search Unavailale. Please Try searching again. - Thanks, ETN Team");
+                            }
+                        }
+                    </script>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="moreAll.html">More</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="getQuote.html"><button class="quote-btn">Get Quote</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="back-button" onclick="goBack()">Back</button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+        <div class="course-container">
+            <div class="header">
+                <h1 class="course">SIX-MONTH COURSE</h1>
+                <h1 class="courseName">SEWING</h1>
+            </div>
+            <div class="vl"></div>
+            <div class="description">
+                <p class="content">Sewing skills are invaluable for personal use,
+                    small businesses, and the fashion
+                    industry. Mastering sewing techniques enables individuals to
+                    create or repair garments, reducing
+                    costs and waste. It also provides opportunities for
+                    entrepreneurship and sustainable living through
+                    customized clothing or tailoring services.</p>
+            </div>
+            <div>
+                <img src="images/sewing.png" alt="sew" class="course-img">
+            </div>
+            <div class="course-content-section">
+                <h2>CONTENT</h2>
+                <p class="course-fees">
+                    <strong>Fees:</strong> R1500<br>
+                    <strong>Purpose:</strong> To provide alterations and new
+                    garment tailoring services
+                </p>
+                <ul class="content-list">
+                    <li>Types of stitches</li>
+                    <li>Threading a sewing machine</li>
+                    <li>Sewing buttons, zips, hems, and seams</li>
+                    <li>Alterations</li>
+                    <li>Designing and sewing new garments</li>
+                </ul>
+            </div>
+            <div class="vl2"></div>
+            <div class="course-opportunities-section-sew">
+                <h2>opportunities</h2>
+                <p class="opportunities-text-sew">
+                    <strong>There is a demand for tailors, and our sewing course
+                        equips students with the tools to get a foot in the door.</strong><br>
+                    <strong>Successfully completing the course qualifies you to be
+                        a:</strong>
+                <ul class="content-list">
+                    <li>Tailor</li>
+                    <li>Seamstress</li>
+                    <li>Alterations manager</li>
+                </ul>
+                </p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="images/sew1.jpg" alt="Dr. Sipho Nkosi" class="testimonial-img">
+                    <h3>Roberta Lee</h3>
+                    <p>Qualifications: Diploma in Fashion
+                        Design, Advanced Sewing Techniques Certification. -
+                        Experience: 10 years in the fashion
+                        industry, specializing in custom tailoring. Emily has taught
+                        sewing workshops for over 5 years.
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/sew2.jpg" alt="Thandi Molefe" class="testimonial-img">
+                    <h3>Linda Tshabalala </h3>
+                    <p>Qualifications: Certificate in Sewing. - Experience: 7 years
+                        working with local fashion brands
+                        and conducting sewing classes for small groups and
+                        individuals.</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/sew3.jpg" alt="Xander van Wyk" class="testimonial-img">
+                    <h3>Fatima Omar </h3>
+                    <p>Qualifications: Certified Patternmaker, National Sewing
+                        Instructor Certificate - Experience: 15
+                        years of experience in clothing production, from patternmaking
+                        to final assembly. Fatima has
+                        taught at various local sewing schools.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>CONTACT US</h3>
+            <p>Phone: +27 11 618 0547</p>
+            <p>Email: empoweringthenation@gmail.com</p>
+            <p>Website: https//:empoweringthenation.ac.za</p>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US</h3>
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a><br>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        <div class="footer-section">
+            <h3>WHERE TO FIND US</h3>
+            <p>Kerk Street, Troye St, Johannesburg 2000</p>
+            <p>WaterStone Drive, Benmore Rd, Sandton 2196</p>
+            <p>255 Pretoruis St, Pretoria Centraal, Pretoria 0001</p>
+        </div>
+    </div>
+    <div class="rights">
+        <p class="pRights">&copy; 2018 Empowering The Nation. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

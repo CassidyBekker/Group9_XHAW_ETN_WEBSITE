@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="styles7in.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/XHAW ETN LOGO - Cropped.png" alt="Logo">
+            <h1 style="align-items: center;">Empowering The Nation</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search..">
+                    <button type="button" onclick="searchPage()">
+                        <img src="images/searchIcon.png" alt="Search Icon">
+                    </button>
+                    <script>
+                        // List of pages and corresponding URLs
+                        const pages = {
+                            "Child minding": "childminding.html",
+                            "Child": "childminding.html",
+                            "child": "childminding.html",
+                            "Child Minding": "childminding.html",
+                            "child minding": "childminding.html",
+                            "First Aid": "firstaid.html",
+                            "first aid": "firstaid.html",
+                            "first": "firstaid.html",
+                            "aid": "firstaid.html",
+                            "Landscaping": "landscaping.html",
+                            "Land": "landscaping.html",
+                            "landscaping": "landscaping.html",
+                            "land": "landscaping.html",
+                            "Cooking": "cooking.html",
+                            "Cook": "cooking.html",
+                            "cooking": "cooking.html",
+                            "cook": "cooking.html",
+                            "life skills": "lifeskills.html",
+                            "Life Skills": "lifeskills.html",
+                            "life": "lifeskills.html",
+                            "skills": "lifeskills.html",
+                            "Garden Maintenance": "gardenmaintenance.html",
+                            "garden maintenance": "gardenmaintenance.html",
+                            "Garden": "gardenmaintenance.html",
+                            "Maintenance": "gardenmaintenance.html",
+                            "Sewing": "sewing.html",
+                            "Sew": "sewing.html",
+                            "sewing": "sewing.html",
+                            "sew": "sewing.html",
+                            "Fees": "getQuote.html",
+                            "fees": "getQuote.html",
+                            "Quote": "getQuote.html",
+                            "quote": "getQuote.html",
+                            "prices": "getQuote.html",
+                            "Prices": "getQuote.html",
+                            "Discount": "courses.html",
+                            "courses": "courses.html",
+                            "Contact": "contactUs.html",
+                            "Social Media": "contactUs.html",
+                        };
+                        // Function to search and navigate to the page
+                        function searchPage() {
+                            const query = document.getElementById("searchInput").value.toLowerCase();
+                            if (pages[query]) {
+                                // Redirect to the corresponding page
+                                window.location.href = pages[query];
+                            } else {
+                                alert("Search Unavailale. Please Try searching again. - Thanks, ETN Team");
+                            }
+                        }
+                    </script>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="moreAll.html">More</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="getQuote.html"><button class="quote-btn">Get Quote</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="back-button" onclick="goBack()">Back</button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+        <div class="course-container">
+            <div class="header">
+                <h1 class="course">SIX-MONTH COURSE</h1>
+                <h1 class="courseName">LIFE SKILLS</h1>
+            </div>
+            <div class="vl"></div>
+            <div class="description">
+                <p class="content">Life skills training fosters essential skills, such
+                    as communication,
+                    problem-solving, and emotional management, which are vital for
+                    personal and professional success. It
+                    helps individuals navigate challenges, build resilience, and make
+                    informed decisions. These skills
+                    are particularly important for developing confidence and self
+                    reliance in both social and workplace
+                    environments</p>
+            </div>
+            <div>
+                <img src="images/lifeskills.png" alt="sew" class="course-img">
+            </div>
+            <div class="course-content-section">
+                <h2>CONTENT</h2>
+                <p class="course-fees">
+                    <strong>Fees:</strong> R1500<br>
+                    <strong>Purpose:</strong> To provide skills to navigate basic life
+                    necessities
+                </p>
+                <ul class="content-list">
+                    <li>Opening a bank account </li>
+                    <li>Basic labour law (know your rights) </li>
+                    <li>Basic reading and writing literacy </li>
+                    <li>Basic numeric literacy </li>
+                </ul>
+            </div>
+            <div class="vl3"></div>
+            <div class="course-opportunities-section">
+                <h2>opportunities</h2>
+                <p class="opportunities-text">
+                    <strong> This course will set you up for future endeavours and
+                        teach to handle your
+                        finances.</strong>
+                </p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="images/lifeSkill1.jpg" alt="Dr. Sipho Nkosi" class="testimonial-img">
+                    <h3>Zanele Dlamini </h3>
+                    <p>Sandton - Qualifications: BA in Psychology, Life Coaching
+                        Certification. -Experience: 7 years of
+                        experience as a life coach, focusing on personal development,
+                        self-esteem, and career growth</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/lifeSkill2.jpg" alt="Thandi Molefe" class="testimonial-img">
+                    <h3>Sean Black</h3>
+                    <p>Qualifications: Social Work Degree, Certified Personal
+                        Development Trainer. - Experience: 10
+                        years in counseling and life skills training, specializing in youth
+                        and adult empowerment.
+                    </p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/lifeSkill3.png" alt="Xander van Wyk" class="testimonial-img">
+                    <h3>Diane Andrew </h3>
+                    <p>- Pretoria - Qualifications: Conflict Resolution Trainer
+                        Certification. -Experience: 8 years of
+                        experience in providing life skills coaching, communication
+                        training, and stress management </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>CONTACT US</h3>
+            <p>Phone: +27 11 618 0547</p>
+            <p>Email: empoweringthenation@gmail.com</p>
+            <p>Website: https//:empoweringthenation.ac.za</p>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US</h3>
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a><br>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        <div class="footer-section">
+            <h3>WHERE TO FIND US</h3>
+            <p>Kerk Street, Troye St, Johannesburg 2000</p>
+            <p>WaterStone Drive, Benmore Rd, Sandton 2196</p>
+            <p>255 Pretoruis St, Pretoria Centraal, Pretoria 0001</p>
+        </div>
+    </div>
+    <div class="rights">
+        <p class="pRights">&copy; 2018 Empowering The Nation. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

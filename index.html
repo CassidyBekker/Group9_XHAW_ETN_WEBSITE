@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation</title>
+    <link rel="stylesheet" href="styles1i.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/XHAW ETN LOGO - Cropped.png" alt="Logo">
+            <h1 style="align-items: center;">Empowering The Nation</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search..">
+                    <button type="button" onclick="searchPage()">
+                        <img src="images/searchIcon.png" alt="Search Icon">
+                    </button>
+                    <script>
+                        // List of pages and corresponding URLs
+                        const pages = {
+                            "Child minding": "childminding.html",
+                            "Child": "childminding.html",
+                            "child": "childminding.html",
+                            "Child Minding": "childminding.html",
+                            "child minding": "childminding.html",
+                            "First Aid": "firstaid.html",
+                            "first aid": "firstaid.html",
+                            "first": "firstaid.html",
+                            "aid": "firstaid.html",
+                            "Landscaping": "landscaping.html",
+                            "Land": "landscaping.html",
+                            "landscaping": "landscaping.html",
+                            "land": "landscaping.html",
+                            "Cooking": "cooking.html",
+                            "Cook": "cooking.html",
+                            "cooking": "cooking.html",
+                            "cook": "cooking.html",
+                            "life skills": "lifeskills.html",
+                            "Life Skills": "lifeskills.html",
+                            "life": "lifeskills.html",
+                            "skills": "lifeskills.html",
+                            "Garden Maintenance": "gardenmaintenance.html",
+                            "garden maintenance": "gardenmaintenance.html",
+                            "Garden": "gardenmaintenance.html",
+                            "Maintenance": "gardenmaintenance.html",
+                            "Sewing": "sewing.html",
+                            "Sew": "sewing.html",
+                            "sewing": "sewing.html",
+                            "sew": "sewing.html",
+                            "Fees": "getQuote.html",
+                            "fees": "getQuote.html",
+                            "Quote": "getQuote.html",
+                            "quote": "getQuote.html",
+                            "prices": "getQuote.html",
+                            "Prices": "getQuote.html",
+                            "Discount": "courses.html",
+                            "courses": "courses.html",
+                            "Contact": "contactUs.html",
+                            "Social Media": "contactUs.html",
+                        };
+
+                        // Function to search and navigate to the page
+                        function searchPage() {
+                            const query = document.getElementById("searchInput").value.toLowerCase();
+
+                            if (pages[query]) {
+                                // Redirect to the corresponding page
+                                window.location.href = pages[query];
+                            } else {
+                                alert("Search Unavailale. Please Try searching again. - Thanks, ETN Team");
+                            }
+                        }
+                    </script>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="moreAll.html">More</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                <li><a href="getQuote.html"><button class="quote-btn">Get Quote</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width videos with number -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 11</div>
+            <video src="videos/slide1_PM.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 11</div>
+            <video src="videos/slide2_Grad.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 11</div>
+            <video src="videos/slide3_CM.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 11</div>
+            <video src="videos/slide4_LS.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 11</div>
+            <video src="videos/slide5_GM.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 11</div>
+            <video src="videos/slide6_FA.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 11</div>
+            <video src="videos/slide7_CK.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 11</div>
+            <video src="videos/slide8_LS.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 11</div>
+            <video src="videos/slide9_SW.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 11</div>
+            <video src="videos/slide10_SS.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 11</div>
+            <video src="videos/slide11_ST.mp4" style="width:100%" autoplay loop muted></video>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+    </div>
+    <!-- Header Section -->
+    <header class="hero">
+        <h1 class="AboutUs">ABOUT US</h1>
+    </header>
+    <!-- Main Section -->
+    <section class="main-content">
+        <div class="graduate">
+            <img src="images/gradStudent.png" alt="Graduate Holding Diploma">
+        </div>
+        <div class="info-section">
+            <!-- First row of content -->
+            <div class="row1">
+                <div>
+                    <p>Established in 2018, Empowering the Nation offers an innovative training program specializing
+                        particularly on enhancing the skills of domestic workers and gardeners, to increase their
+                        employability. We offer a large range of training courses, providing the community with the
+                        opportunity to chooses between six-week short skills training programmes or six-month long
+                        learnerships. With a 95% success rate and recognition as the 15th most valuable skills training
+                        institution in Gauteng, we ensure that students who complete our programs not only gain
+                        practical, marketable skills but are also well-prepared to secure well-paying employment or
+                        successfully launch their own businesses.</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="info-block">
+                    <img src="images/6week.png" alt="Training Image 1">
+                    <p style="font-size: large;background-color:#FFC107 ;"><a href="MoreC2.html">6-Week Courses</a></p>
+                    <p>Our college is dedicated to giving you real-world, hands-on training so you may be successful in
+                        the job. Our carefully planned six-week courses are aimed at equipping you with useful skills in
+                        areas such as gardening, cooking, and childcare. We offer the ideal course for you, regardless
+                        of your goals—whether they want to launch a new profession or expand your current skill set. Are
+                        you prepared to change the course of your future?</p>
+                </div>
+                <div class="info-block">
+                    <img src="images/6month.png" alt="Training Image 2">
+                    <p style="font-size: large;background-color:#d84bff"><a href="MoreC.html">6-Month Courses</a></p>
+                    <p>The six-month courses offered by our institution are structured educational programs designed to
+                        provide participants with in-depth knowledge and practical skills in specific areas like First
+                        Aid, Sewing, Landscaping, and Life Skills. Over six months, students engage in theoretical and
+                        hands-on learning, allowing them to develop expertise and become more competitive in the job
+                        market. The extended duration ensures that participants have sufficient time to fully grasp and
+                        apply the skills they learn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="testimonials">
+        <div class="testimonial">
+            <img src="images/jared_T1.png" alt="Jared Williams" class="testimonial-img">
+            <h3>Jared Williams</h3>
+            <p>“Joining Empowering the Nations has been the best decision I made. After finishing matric I couldn’t get
+                into my dream university, I wanted to give up. But when I heard about the Empowering the Nations and the
+                opportunities, they provide their students, it changed everything. I felt fully equipped to take on the
+                world. I am now a certified paramedic. For that, I thank ETN.”</p>
+        </div>
+        <div class="testimonial">
+            <img src="images/abigail_T2.png" alt="Abigail Ndlovu" class="testimonial-img">
+            <h3>Abigail Ndlovu</h3>
+            <p>“Empowering the nations training school has made me believe that I am capable of achieving greatness,
+                despite my age. The culture of the classes is very supportive, and the staff truly go above and beyond
+                to help students succeed. Their services have helped me to open up my very small business. I can’t
+                recommend the school enough.”</p>
+        </div>
+        <div class="testimonial">
+            <img src="images/xander_T3.png" alt="Xander van Wyk" class="testimonial-img">
+            <h3>Xander van Wyk</h3>
+            <p>“Enrolling our staff to Empowering the Nations was one of the best investments for our business. Their
+                courses are tailored to real-world experiences, which has significantly increased the competence of our
+                team. We have seen an increase of productivity and confidence among our employees. The practical
+                approach has not only improved their professional abilities but also reinvigorated the culture of
+                ongoing learning in our company.”</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <p>Phone: +27 11 618 0547</p>
+                <p>Email: empoweringthenation@gmail.com</p>
+                <p>Website: https//:empoweringthenation.ac.za</p>
+            </div>
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <a href="https://www.tiktok.com/@etn_skillsdev"><i class="fab fa-tiktok"></i> TikTok</a><br>
+                <a href="https://x.com/etn_skillsdev"><i class="fab fa-twitter"></i>Twitter</a><br>
+                <a href="https://www.facebook.com/people/Empowering-The-Nation/61567185643658/"><i
+                        class="fab fa-facebook-f"></i> Facebook</a><br>
+                <a href="https://www.instagram.com/etn_skillsdev/"><i class="fab fa-instagram"></i> Instagram</a><br>
+            </div>
+            <div class="footer-section">
+                <h3>WHERE TO FIND US</h3>
+                <p>Kerk Street, Troye St, Johannesburg 2000</p>
+                <p>WaterStone Drive, Benmore Rd, Sandton 2196</p>
+                <p>255 Pretoruis St, Pretoria Centraal, Pretoria 0001</p>
+            </div>
+        </div>
+        <div class="rights">
+            <p class="pRights">&copy; 2018 Empowering The Nation. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
