@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowering the Nation</title>
+    <meta name="description" content="Get an instant quote for our accredited skills training courses. Calculate fees,
+    explore course options, and start your journey toward professional growth. Request a quote today! Contact Us through our contact form!">
+    <title>Get an Instant Quote or Contact Us | Empowering the Nation</title>
     <link rel="stylesheet" href="styles2GQ.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -12,7 +13,7 @@
 
 <body>
     <div class="banner">
-        <video src="videos/ETN_Banner.mp4" class="Hvideo" autoplay loop muted></video>
+        <video src="videos/ETN_Banner.mp4" class="Hvideo" autoplay loop muted alt="Banner for Get Quote Page"></video>
     </div>
 
     <header class="header">
@@ -90,7 +91,7 @@
         <div class="quote-container">
             <!-- Left Section: Image -->
             <div class="quote-image">
-                <img src="images/quote_img.png" alt="Quote Image">
+                <img src="images/quote_img.png" alt="Image of Get your quote heading">
             </div>
             <!-- Right Section: Form -->
             <div class="quote-form">
@@ -118,44 +119,54 @@
                     <button class="calculate-btn" onclick="calculateTotal()">Calculate</button>
                     <!-- Discount and Total Section -->
                     <div class="totals">
-                        <p>DISCOUNT: <strong><span id="discount">0%</span></strong></p>
-                        <p>TOTAL: <strong>R<span id="total">0</span></strong></p>
+                        <div class="discount-vat">
+                            <p>DISCOUNT: <strong><span id="discount">0%</span></strong></p>
+                            <p>ADDED VAT: <strong><span id="VAT">15%</span></strong></p>
+                        </div>
+                        <div class="total">
+                            <p>TOTAL: <strong>R<span id="total">0.00</span></strong></p>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </main>
     <main>
-        <div><img src="images/touchBG.png" class="background">
+        <div>
+            <img src="images/touchBG.png" class="background" alt="background image for form">
             <div class="box">
-                <div class="group">
-                    <div class="input-field">
-                        <label class="label" for="input-1">Name:</label>
-                        <input class="value-wrapper" placeholder="First Name" type="text" id="input-1" />
+                <form id="contactForm">
+                    <div class="group">
+                        <div class="input-field">
+                            <label class="label" for="name">Name:</label>
+                            <input class="value-wrapper" placeholder="First Name" type="text" id="name" />
+                        </div>
+                        <div class="div">
+                            <div class="label">Message:</div>
+                            <input class="value-wrapper" placeholder="Message" type="text" id="message" />
+                        </div>
+                        <div class="input-field-2">
+                            <div class="label">Email:</div>
+                            <input class="value-wrapper" placeholder="@" type="email" id="email" />
+                        </div>
+                        <div class="input-field-3">
+                            <div class="label">Phone Number:</div>
+                            <input class="value-wrapper" placeholder="+27" type="tel" id="phone" />
+                        </div>
+                        <div class="input-field-4">
+                            <label class="label" for="surname">Surname:</label>
+                            <input class="value-wrapper" placeholder="Last Name" type="text" id="surname" />
+                        </div>
                     </div>
-                    <div class="div">
-                        <div class="label">Message:</div>
-                        <input class="value-wrapper" placeholder="Message" type="text" id="input-message" />
-                    </div>
-                    <div class="input-field-2">
-                        <div class="label">Email:</div>
-                        <input class="value-wrapper" placeholder="@" type="text" id="input-email" />
-                    </div>
-                    <div class="input-field-3">
-                        <div class="label">Phone Number:</div>
-                        <input class="value-wrapper" placeholder="+27" type="number" id="input-phone" />
-                    </div>
-                    <div class="input-field-4">
-                        <label class="label" for="input-2">Surname:</label>
-                        <input class="value-wrapper" placeholder="Last Name" type="text" id="input-2" />
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
+        <script src="form.js"></script>
     </main>
     <!-- Submit button -->
     <div class="submit-button">
-        <button type="button" class="submit" onclick="clearInputs()">Submit</button>
+        <button type="button" class="submit" onclick="submitForm()">Submit</button>
     </div>
     <script>
         function clearInputs() {
@@ -169,31 +180,41 @@
         function goBack() {
             window.history.back();
         }
-        // Function to calculate total and discount
-        function calculateTotal() {
-            const checkboxes = document.querySelectorAll('.checkbox:checked');
-            let total = 0;
-            // Calculate total based on selected courses
-            checkboxes.forEach(checkbox => {
-                total += parseFloat(checkbox.value);
-            });
-            // Determine discount
-            let discount = 0;
-            if (checkboxes.length === 2) {
-                discount = 5;
-            } else if (checkboxes.length === 3) {
-                discount = 10;
-            } else if (checkboxes.length >= 4) {
-                discount = 15;
-            }
-            // Calculate discount amount and final total
-            const discountAmount = (total * discount) / 100;
-            const discountedTotal = total - discountAmount;
-            // Update UI with discount and total
-            document.getElementById('discount').innerText = discount + '%';
-            document.getElementById('total').innerText = discountedTotal.toFixed(2);
-        }
-    </script>
+  // Function to calculate total and discount, then apply VAT
+function calculateTotal() {
+    const checkboxes = document.querySelectorAll('.checkbox:checked');
+    let total = 0;
+
+    // Calculate total based on selected courses
+    checkboxes.forEach(checkbox => {
+        total += parseFloat(checkbox.value);
+    });
+
+    // Determine discount
+    let discount = 0;
+    if (checkboxes.length === 2) {
+        discount = 5;
+    } else if (checkboxes.length === 3) {
+        discount = 10;
+    } else if (checkboxes.length >= 4) {
+        discount = 15;
+    }
+
+    // Calculate discount amount and apply it
+    const discountAmount = (total * discount) / 100;
+    const discountedTotal = total - discountAmount;
+
+    // Add 15% VAT to the discounted total
+    const vat = 0.15;
+    const totalWithVAT = discountedTotal * (1 + vat);
+
+    // Update UI with discount, VAT, and final total
+    document.getElementById('discount').innerText = discount + '%';
+    document.getElementById('total').innerText = totalWithVAT.toFixed(2);
+}
+
+</script>
+    <script src="form.js"></script>
 </body>
 <footer>
     <div class="footer-container">

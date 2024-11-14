@@ -266,6 +266,7 @@ nav ul li:last-child {
     right: 0;
     margin-right: 80px;
     height: 100px;
+    width: 350px;
 }
 
 .totals p {
