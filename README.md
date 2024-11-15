@@ -2,11 +2,11 @@ Group 9_XHAW5112_POE_Empowering the Nation_WEBSITE
 Visual Studio Code - All code for Website
 
 GROUP-9 MEMBERS:
-ST10434181 - Cassidy Bekker (Team Leader)
-ST10441408 – Lerato (Vicky) Phiri 
-ST10443365 – Tristan Hoskins 
-ST10437204– Li-Caylor Christians 
-ST10456060 – Mivuyo Kwepile
+1. ST10434181 - Cassidy Bekker (Team Leader)
+2. ST10441408 – Lerato (Vicky) Phiri 
+3. ST10443365 – Tristan Hoskins 
+4. ST10437204– Li-Caylor Christians 
+5. ST10456060 – Mivuyo Kwepile
 
 WALKTHROUGH DEMO LINK: https://youtu.be/-n3lBwAkdzY
 
